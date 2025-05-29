@@ -3,8 +3,4 @@ name = "dtf-workspace"
 version = "0.4.0"
 description = "DTF Workspace - Development environment for DTF projects"
 requires-python = ">=3.8"
-dependencies = [
-    "dtf-framework @ git+https://github.com/sealablab/dtf-framework.git",
-    "dtf-tools @ git+https://github.com/sealablab/dtf-tools.git"
-]
 
