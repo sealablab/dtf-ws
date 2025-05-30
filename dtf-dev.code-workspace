@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"name": "DTF Development Environment",
+			"path": "."
+		},
+		{
+			"name": "DTF Framework",
+			"path": "./dtf-framework"
+		},
+		{
+			"name": "DTF Tools",
+			"path": "./dtf-tools"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+		"python.analysis.extraPaths": [
+			"${workspaceFolder}/dtf-framework",
+			"${workspaceFolder}/dtf-tools"
+		],
+		"python.analysis.typeCheckingMode": "basic",
+		"python.analysis.diagnosticMode": "workspace",
+		"python.analysis.autoImportCompletions": true,
+		"python.linting.enabled": true,
+		"python.linting.ruffEnabled": true,
+		"python.formatting.provider": "black",
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.rulers": [88, 100],
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/.pytest_cache": true,
+			"**/.coverage": true,
+			"**/.mypy_cache": true,
+			"**/.ruff_cache": true,
+			"**/.uv": true,
+			"**/.venv": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.vscode-pylance",
+			"ms-python.black-formatter",
+			"charliermarsh.ruff",
+			"ms-python.isort"
+		]
+	}
+}
