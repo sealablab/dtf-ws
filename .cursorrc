@@ -1,0 +1,49 @@
+{
+    "project": {
+        "name": "DTF",
+        "description": "Development environment for DTF Framework and Tools",
+        "repositories": [
+            {
+                "name": "dtf-framework",
+                "url": "https://github.com/sealablab/dtf-framework",
+                "description": "Core Python package providing data models and utilities"
+            },
+            {
+                "name": "dtf-tools",
+                "url": "https://github.com/sealablab/dtf-tools",
+                "description": "Development tools and utilities for the framework"
+            }
+        ]
+    },
+    "editor": {
+        "formatOnSave": true,
+        "defaultFormatter": "black",
+        "python": {
+            "linting": {
+                "enabled": true,
+                "pylintEnabled": false,
+                "ruffEnabled": true
+            },
+            "formatting": {
+                "provider": "black"
+            }
+        }
+    },
+    "search": {
+        "exclude": [
+            "**/.git/**",
+            "**/.venv/**",
+            "**/__pycache__/**",
+            "**/.pytest_cache/**",
+            "**/.uv-cache/**",
+            "**/.DS_Store",
+            "**/*.pyc",
+            "**/*.pyo",
+            "**/*.pyd",
+            "**/.coverage",
+            "**/htmlcov/**",
+            "**/.mypy_cache/**",
+            "**/.ruff_cache/**"
+        ]
+    }
+} 
